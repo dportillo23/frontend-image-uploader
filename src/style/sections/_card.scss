@@ -1,0 +1,153 @@
+.card {
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    padding: 2.25rem 2rem;
+    min-width: 400px;
+
+    h1 {
+        font-size: 1.125rem;
+        color: #4F4F4F;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 0.625rem;
+        color: #828282;
+    }
+}
+
+.or {
+    font-size: 0.75rem;
+    margin-top: -1rem;
+    margin-bottom: 1.375rem;
+}
+
+.image_div {
+    background-color: #F6F8FB;
+    margin: 2rem 0;
+    width: 338px;
+    height: 219px;
+    border-radius: 0.75rem;
+
+    .mountain {
+        width: 7.125rem;
+    }
+
+    p {
+        color: #BDBDBD;
+        line-height: 1rem;
+    }
+}
+
+.pre-loaded {
+    border: 1px dashed #97BEF4;
+    padding: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.uploaded {
+    display: flex;
+    justify-content: center;
+}
+
+.uploaded-image {
+    max-width: 100%;
+    border-radius: 0.75rem;
+    height: auto;
+}
+
+button {
+    font-family: 'Noto Sans', sans-serif;
+    border-radius: 0.5rem;
+    background-color: #2F80ED;
+    border: none;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.file-button {
+    font-size: 0.75rem;
+    width: 6.25rem;
+}
+
+.fa-circle-check {
+    width: 2rem;
+    height: auto;
+    color: #219653;
+    margin-bottom: 0.75rem;
+}
+
+.input-div {
+    position: relative;
+    width: 100%;
+}
+
+.url-input {
+    width: 100%;
+    font-family: 'Poppins';
+    letter-spacing: -3.5%;
+    font-size: 0.5rem;
+    line-height: 0.75rem;
+    height: 2rem;
+    background-color: #F6F8FB;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    position: relative;
+}
+
+.copy-button {
+    width: 4.625rem;
+    font-size: 0.5rem;
+    height: 1.8rem;
+    position: absolute;
+    right: 0.1rem;
+    top: 0.1rem;
+
+    &::before {
+        content: 'Link copied';
+        width: 150%;
+        position: absolute;
+        top: -100%;
+        right: -33%;
+        background-color: #4F4F4F;
+        border: none;
+        border-radius: 0.15rem;
+        height: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s ease-in;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 0.5rem solid transparent;
+        border-right: 0.5rem solid transparent;
+        border-top: 0.5rem solid #4F4F4F;
+        top: -50%;
+        right: 33%;
+        opacity: 0;
+        transition: opacity 0.25s ease-in;
+    }
+
+}
+
+.active {
+
+    &::after,
+    &::before {
+        opacity: 1;
+    }
+}
