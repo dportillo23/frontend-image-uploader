@@ -1,7 +1,7 @@
 {
   "name": "image-uploader",
   "version": "0.1.0",
-  "homepage": "https://github.com/dportillo23/frontend-image-uploader",
+  "homepage": "https://dportillo23.github.io/frontend-image-uploader",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
